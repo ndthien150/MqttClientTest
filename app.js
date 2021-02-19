@@ -33,6 +33,6 @@ app.use(settings.httpAdminRoot, RED.httpAdmin)
 
 app.use(settings.httpNodeRoot, RED.httpNode)
 
-server.listen(8000)
+server.listen(8000, '0.0.0.0')
 
 RED.start()
