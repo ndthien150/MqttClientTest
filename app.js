@@ -4,6 +4,7 @@ import RED from 'node-red'
 
 
 const app = express()
+const PORT = process.env.PORT || 3000
 
 app.use("/public", express.static("public"))
 app.use("/home", express.static("home"))
@@ -33,6 +34,6 @@ app.use(settings.httpAdminRoot, RED.httpAdmin)
 
 app.use(settings.httpNodeRoot, RED.httpNode)
 
-server.listen(8000, '0.0.0.0')
+server.listen(PORT, '0.0.0.0')
 
 RED.start()
