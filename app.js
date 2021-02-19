@@ -13,7 +13,7 @@ const server = http.createServer(app)
 var settings = {
     httpAdminRoot:"/red",
     httpNodeRoot: "/",
-    userDir:"/home/thiendev/.nodered",
+    userDir:"home/thiendev/.nodered",
     functionGlobalContext: { },    // enables global context
     adminAuth: {
         type: "credentials",
